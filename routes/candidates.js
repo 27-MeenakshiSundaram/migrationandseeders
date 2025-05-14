@@ -1,8 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const { Candidate } = require('../models/index'); // adjust the path to your models
+const { Candidate } = require('../models/index');
 
-// GET /users?page=1&limit=10
 router.get('/', async (req, res) => {
   try {
     const page = parseInt(req.query.page) || 1;
